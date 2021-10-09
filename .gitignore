@@ -2,3 +2,5 @@
 /extension/.eslintcache
 /extension/build
 /static
+
+.env

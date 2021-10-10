@@ -7,17 +7,17 @@
 	"browser_action": {
 		"default_popup": "extension/build/index.html",
 		"default_icon": {
-			"16": "/images/get_started16.png",
-			"32": "/images/get_started32.png",
-			"48": "/images/get_started48.png",
-			"128": "/images/get_started128.png"
+			"16": "/images/book_icon_16x16.png",
+			"32": "/images/book_icon_32x32.png",
+			"48": "/images/book_icon_48x48.png",
+			"128": "/images/book_icon_128x128.png"
 		}
 	},
 	"icons": {
-		"16": "/images/get_started16.png",
-		"32": "/images/get_started32.png",
-		"48": "/images/get_started48.png",
-		"128": "/images/get_started128.png"
+		"16": "/images/book_icon_16x16.png",
+		"32": "/images/book_icon_32x32.png",
+		"48": "/images/book_icon_48x48.png",
+		"128": "/images/book_icon_128x128.png"
 	},
 	"content_security_policy": "script-src 'self' 'sha256-13+7+3N3fcSiJHWcdZ1uxxUA5E5uNvv6qQfGbAUdhcI='; object-src 'self';"
 }

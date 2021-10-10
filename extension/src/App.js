@@ -16,9 +16,16 @@ const App = () => {
 
 	return (
 		<div>
-			{success
-				? "Item added to reading list"
-				: "There was an error adding this item to your reading list. Please try again."}
+			{success ? (
+				<div>
+					<div>Item added to reading list!</div>
+				</div>
+			) : (
+				<div>
+					There was an error adding this item to your reading list. Please try
+					again.
+				</div>
+			)}
 		</div>
 	);
 };

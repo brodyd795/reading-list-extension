@@ -1,18 +1,26 @@
+import React, { useEffect, useState } from "react";
 import dotenv from "dotenv";
 
-import "./App.css";
-import { changeColor } from "./main";
+import { addToReadingList } from "./main";
 
 dotenv.config();
 
-function App() {
+const App = () => {
+	const [success, setSuccess] = useState(false);
+
+	useEffect(() => {
+		addToReadingList().then((wasSuccessful) => {
+			setSuccess(wasSuccessful);
+		});
+	}, []);
+
 	return (
-		<div className="App">
-			<header className="App-header">
-				<button onClick={changeColor}>Change color</button>
-			</header>
+		<div>
+			{success
+				? "Item added to reading list"
+				: "There was an error adding this item to your reading list. Please try again."}
 		</div>
 	);
-}
+};
 
 export default App;

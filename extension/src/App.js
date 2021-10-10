@@ -10,9 +10,15 @@ const App = () => {
 	const [success, setSuccess] = useState(false);
 
 	useEffect(() => {
-		addToReadingList().then((wasSuccessful) => {
-			setSuccess(wasSuccessful);
-		});
+		addToReadingList()
+			.then((wasSuccessful) => {
+				setSuccess(wasSuccessful);
+			})
+			.then(() => {
+				setTimeout(() => {
+					window.close();
+				}, 2000);
+			});
 	}, []);
 
 	const text = success

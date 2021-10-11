@@ -1,5 +1,7 @@
 /*global chrome*/
 
+const apiUrl = "http://brody-v2.dingel.dev/api/controllers/add-to-reading-list";
+
 export async function addToReadingList() {
 	let success = true;
 
@@ -7,7 +9,7 @@ export async function addToReadingList() {
 		const url = tabs[0].url;
 		const key = process.env.REACT_APP_API_SECRET;
 
-		fetch("http://localhost:3000/api/controllers/reading-list", {
+		fetch(apiUrl, {
 			method: "POST",
 			body: JSON.stringify({ url, key }),
 		}).catch(() => {

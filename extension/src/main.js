@@ -1,6 +1,6 @@
 /*global chrome*/
 
-const apiUrl = "http://brody-v2.dingel.dev/api/controllers/add-to-reading-list";
+const apiUrl = "http://brody.dingel.dev/api/controllers/add-to-reading-list";
 
 export async function addToReadingList() {
 	let success = true;
